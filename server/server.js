@@ -17,3 +17,5 @@ app.post( '/todos', ( req, res ) => {
 		doc => res.send( doc ),
 		e => res.status( 400 ).send( e ) );
 } );
+
+module.exports = { app };
